@@ -1,0 +1,280 @@
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: max-content;
+    /* background-color: #f0f0f0; */
+    padding: 2%;
+    margin: 3%;
+}
+
+.head {
+    font-family: 'GFont3', cursive;
+    font-size: 40px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: aqua; */
+    /* font-family:'GFont1', cursive; */
+    font-family: 'Britany', cursive;
+    /* font-weight: bold; */
+    color: aliceblue;
+    font-size: 50px;
+}
+
+#intro {
+    margin-top: 25px;
+    height: 100px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: #f0f0f0; */
+    font-family: 'GFont2', cursive;
+    color: aliceblue;
+    text-align: center;
+    height: fit-content;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: #f0f0f0; */
+    font-family: 'GFont2', cursive;
+    color: aliceblue;
+    text-align: center;
+}
+
+.about .left1 {
+    width: 15%;
+    font-family: 'Britany', cursive;
+    font-size: 50px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.about .right1 {
+    width: 80%;
+    margin-left: 5%;
+    font-family: 'GFont3', cursive;
+}
+
+
+.minHead {
+    font-family: 'Britany', cursive;
+    font-size: 30px;
+}
+
+.projects {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 270px;
+    height: 200px;
+    margin: 4%;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'GFont3', cursive;
+    font-size: 13px;
+}
+
+.flip-card-front {
+    
+    color: #ecf0f1;
+}
+
+.flip-card-back {
+   
+    color: #ecf0f1;
+    transform: rotateY(180deg);
+}
+.dark .flip-card-front {
+    background: linear-gradient(#493044, #0d021e);
+    
+}
+.dark .flip-card-back {
+    background-color: #493044;
+}
+.light .flip-card-front {
+     background: linear-gradient(#876394, #536279);
+}
+.light .flip-card-back {
+    background-color:#536279;
+}
+
+
+.projTitle {
+    font-family: 'GFont3', cursive;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.projStackTitle {
+    font-family: 'Britany', cursive;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.projStackData {
+    font-family: 'GFont3', cursive;
+    font-size: 16px;
+}
+
+.skills {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+}
+.skillDev{
+    font-family: "GFont3", cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 3%;
+   justify-content: center;
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 1000px; */
+    margin: 5px;
+    display: flex;
+}
+
+.dark .skill {
+    background: linear-gradient(#493044, #0d021e);
+    color: #ffffff;
+    border: 1px solid black;
+}
+
+.light.skill {
+    background: linear-gradient(#7d5a8a, #536279);
+    color: #ffffff;
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.skill:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+
+.contact {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+    font-family: "GFont3", cursive;
+    font-size: 20px;
+}
+
+.left2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+@font-face {
+    font-family: 'Britany';
+    src: url('fonts/BrittanySignature.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GFont1';
+    src: url('fonts/Kapakana-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GFont2';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GFont3';
+    src: url('fonts/GamiliaDemoRegular-d9DL7.ttf') format('truetype');
+}
+
+@media screen and (max-width: 768px) {
+
+    .intro {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    #intro {
+        margin-top: 0px;
+        height: 130px;
+    }
+
+    .aboutSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .left1 {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .about .right1 {
+        width: 100%;
+        margin-left: 0;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eiman Asif</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="mainSection.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page1 dark" id="page1">
+    <div class="sidebar collapsed">
+      <span class="menu">
+        <span>
+          <button class="toggleBtn" onclick="handleToggler()">X</button>
+        </span>
+        <br>
+        <span ><a href="https://drive.google.com/drive/folders/1wdQt0ZbgmNt8XpspQcIbPDnjTqbvvZQ5">Resume</a></span>
+        <span ><a href="#about">About</a></span>
+        <span><a href="#skills">Skills</a></span>
+        <span><a href="#projects">Projects</a></span>
+        <span><a href="#projects">Projects</a></span>
+      </span>
+    </div>
+    <div class="navbar">
+      <span class="Title">Eiman Asif</span>
+      <button class="toggleBtn" onclick="handleToggler()">☰</button>
+      <span class="menu">
+        <span><a href="https://drive.google.com/drive/folders/1wdQt0ZbgmNt8XpspQcIbPDnjTqbvvZQ5">Resume</a></span>
+        <span><a href="#about">About</a></span>
+        <span><a href="#skills">Skills</a></span>
+        <span><a href="#projects">Projects</a></span>
+        <span><a href="#contact">Contact</a></span>
+
+      </span>
+    </div>
+    <label class="switch">
+    <input type="checkbox" id="toggleSwitch">
+    <span class="slider"></span>
+  </label>
+    <div class="mainSection">
+
+      <div class="intro" id="introSection">
+        <div class="head">Hi My Name is Eiman Asif <br>Welcome to my Portfolio</div>
+        <div id="intro"></div>
+      </div>
+      <div class="about" id="about">
+        <h1 class="head">About Me</h1>
+        <div class="aboutSection">
+          <div class="left1">
+            Who am I??
+          </div>
+          <div class="right1">
+            <p>
+              I am Computer Science Student at FAST NUCES Lahore Campus.I am a passionate web developer with a keen
+              interest in creating dynamic and responsive web applications. My journey in web development has equipped
+              me with a solid foundation in both front-end and back-end technologies, allowing me to build comprehensive
+              solutions that meet user needs.
+            </p>
+            <p>
+              I thrive on challenges and continuously seek opportunities to learn and grow in this ever-evolving field.
+              My goal is to contribute to innovative projects that make a positive impact on users and the digital
+              landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="projects" id="projects">
+        <div class="head">Projects</div>
+        <div class="minHead">What i have done</div>
+        <div class="container mt-4">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="projTitle">Syncora</span>
+                    <span class="projStackTitle">Stack:</span>
+                    <span class="projStackData">Next JS - Django -MySql
+                      <!-- <a href="">🔗</a> -->
+                    </span>
+                  </div>
+                  <div class="flip-card-back">
+                    Syncora is a web app that elevates virtual hangouts with synchronized video streaming, live chat,
+                    playlist management, and interactive party rooms. Powered by Django Channels, Next.js, and MySQL, it
+                    ensures real-time engagement through APIs and WebSockets.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="projTitle">PlayShare</span>
+                    <span class="projStackTitle">Stack:</span>
+                    <span class="projStackData">Node JS - Html Css -MySql</span>
+                  </div>
+                  <div class="flip-card-back">
+                    The application offers a user-friendly hub for sports enthusiasts, featuring team/player search,
+                    match histories, notifications, and booking with integrated payments. Users can explore tournaments,
+                    manage calendars, earn badges, and stay updated through a built-in sports news feed.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="projTitle"> Network Threat Monitor and Packet Logger</span>
+                    <span class="projStackTitle">Stack:</span>
+                    <span class="projStackData">Flask - Python - Scapy</span>
+
+                  </div>
+                  <div class="flip-card-back">
+                    Network Threat Monitor and Packet Logger is a Python-based tool that captures real-time network
+                    traffic using Scapy and socket programming. It logs detailed packet data and features keyword-based
+                    alerts and filtering for basic intrusion detection and diagnostics.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="projTitle">Face Expression Recognition</span>
+                    <span class="projStackTitle">Stack:</span>
+                    <span class="projStackData">Python - AI/ML</span>
+                  </div>
+                  <div class="flip-card-back">
+                    ResEmoteNet is a deep learning model built on ResNet-18 with attention mechanisms to classify facial
+                    expressions using the FER-2013 dataset. Trained with early stopping and data augmentation, it
+                    achieved 64.47% test accuracy, outperforming baseline models in recognizing seven emotion
+                    categories.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="projTitle">Tetris Game</span>
+                    <span class="projStackTitle">Stack:</span>
+                    <span class="projStackData">C++ - SFML</span>
+                  </div>
+                  <div class="flip-card-back">
+                    Experience the classic Tetris game reimagined with C++ and SFML, featuring smooth gameplay, vibrant
+                    graphics, and intuitive controls. Built using object-oriented principles, it offers customizable
+                    difficulty and a dynamic interface for a nostalgic yet modern experience.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="projTitle">Web MD</span>
+                    <span class="projStackTitle">Stack:</span>
+                    <span class="projStackData">Node JS - HTML</span>
+                  </div>
+                  <div class="flip-card-back">
+                    Web MD is a powerful app that streamlines healthcare by managing doctor appointments, surgeries,
+                    patient records, hospital operations, and online medication services, ensuring smooth coordination
+                    between patients, doctors, and hospitals for better care.
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="projTitle">Bejeweled Blitz Game</span>
+                    <span class="projStackTitle">Stack:</span>
+                    <span class="projStackData">C++ - Windows Library </span>
+                  </div>
+                  <div class="flip-card-back">
+                    Bejeweled Blitz is a fast-paced, console-based puzzle game built in C++, where players match gems to
+                    trigger explosive combos and climb the leaderboard. With addictive mechanics, power-ups, and vibrant
+                    gameplay, it delivers a thrilling gem-matching experience despite its simple interface.
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="skills" id="skills">
+        <div class="head">Skills</div>
+        <div class="minHead">What I can do</div>
+        <div class="d-flex flex-wrap gap-3 skillDev">
+          <div class="skill p-2 ">HTML</div>
+          <div class="skill p-2 ">CSS</div>
+          <div class="skill p-2 ">JavaScript</div>
+          <div class="skill p-2 ">React</div>
+          <div class="skill p-2 ">Node.js</div>
+          <div class="skill p-2 ">Python</div>
+          <div class="skill p-2 ">Next JS</div>
+          <div class="skill p-2 ">React JS</div>
+          <div class="skill p-2 ">Scapy</div>
+          <div class="skill p-2 ">Flask</div>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <div class="head">Contact Me</div>
+        <div class="minHead">Let's Connect</div>
+        <div class="contactSection">
+          <div class="left2">
+            <p>
+              <br>
+              Feel free to reach out to me via email at eimanasif15@gmail.com </p>
+              
+              LinkedIn:  <a href="https://www.linkedin.com/in/eiman-asif-0b1b4a1b6/">🔗Eiman Asif</a>
+      </div>
+
+    </div>
+    </div>
+    <script>
+      function handleToggler() {
+        const sidebar = document.querySelector('.sidebar'); // Corrected from `.navbar` to `.sidebar`
+        const toggleBtn = document.querySelector('.toggleBtn');
+
+        if (sidebar.classList.contains('collapsed')) {
+          sidebar.classList.remove('collapsed');
+          sidebar.classList.add('extended');
+        } else {
+          sidebar.classList.add('collapsed');
+          sidebar.classList.remove('extended');
+        }
+
+        // toggleBtn.classList.toggle('active');
+      }
+
+
+    </script>
+    <script>
+      const lines = [
+        "I am a Web Developer",
+        "I am a Full-Stack Developer"
+      ];
+
+      const typingSpeed = 100;
+      const erasingSpeed = 50;
+      const delayBetweenLines = 1500;
+
+      let lineIndex = 0;
+      let charIndex = 0;
+      const typewriter = document.getElementById("intro");
+
+      function typeLine() {
+        if (charIndex < lines[lineIndex].length) {
+          typewriter.textContent += lines[lineIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typeLine, typingSpeed);
+        } else {
+          setTimeout(eraseLine, delayBetweenLines);
+        }
+      }
+
+      function eraseLine() {
+        if (charIndex > 0) {
+          typewriter.textContent = lines[lineIndex].substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(eraseLine, erasingSpeed);
+        } else {
+          lineIndex = (lineIndex + 1) % lines.length;
+          setTimeout(typeLine, 500);
+        }
+      }
+
+      // Start the animation
+      typeLine();
+    </script>
+    <script>
+  const toggle = document.getElementById('toggleSwitch');
+  toggle.addEventListener('change', function () {
+    const page = document.getElementById('page1');
+
+    if (page.classList.contains('dark')) {
+      page.classList.remove('dark');
+      page.classList.add('light');
+    } else {
+      page.classList.remove('light');
+      page.classList.add('dark');
+    }
+  });
+</script>
+
+</body>
+
+</html>

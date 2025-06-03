@@ -1,0 +1,146 @@
+.navbar {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    /* display: flex; */
+}
+
+.Title {
+    font-family: 'Britany', cursive;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    /* vertically centers the text */
+    /* font-size: 15px; */
+    margin-left: 10px;
+}
+
+.menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    /* display: flex; */
+    align-items: center;
+    color: #fff;
+    font-family: 'GFont3', cursive;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.toggleBtn {
+    color: #fff;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    position: absolute;
+}
+
+.navbar .toggleBtn {
+    display: none;
+    background-color: rgba(65, 2, 65, 0.4);
+    font-size: 20px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    /* background-color: rgba(19, 5, 33, 0.8); */
+    padding: 8px 20px 8px 20px;
+}
+
+.dark .menu a{
+     background-color: rgba(19, 5, 33, 0.8);
+} 
+.light .menu a{
+      background:transparent
+} 
+.menu a:active {
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+}
+@media screen and (max-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 100%;
+        /* background-color: rgba(25, 15, 35, 0.8); */
+        /* semi-transparent background */
+        backdrop-filter: blur(10px);
+        /* adds glass-like blur */
+        z-index: 1000;
+        /* ensures it appears above other content */
+        display: block;
+    }
+    .light .sidebar {
+        background: linear-gradient(#876394, #536279);
+        /* light theme gradient */
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .sidebar.extended .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        /* space from the top */
+        transition: all 0.3s ease-in-out;
+        /* smooth transition */
+    }
+
+    .sidebar.collapsed {
+        display: none;
+    }
+
+    .navbar .toggleBtn {
+        display: flex;
+    }
+
+    .menu a {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        font-size: 20px;
+    }
+
+    .menu a:hover {
+        background-color: #8e55a3,;
+        color: #fff;
+    }
+
+    .sidebar .toggleBtn {
+        background-color: rgba(25, 15, 35, 0.8);
+        color: #fff;
+    }
+
+}
+
+@font-face {
+    font-family: 'GFont3';
+    src: url('fonts/GamiliaDemoRegular-d9DL7.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Britany';
+    src: url('fonts/BrittanySignature.ttf') format('truetype');
+}
